@@ -1,0 +1,58 @@
+{
+  "name": "@fullstackhouse/react-compose",
+  "version": "0.1.0",
+  "description": "Compose React providers and components to avoid deeply nested JSX trees",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "compose",
+    "providers",
+    "context",
+    "hoc",
+    "wrapper",
+    "nesting"
+  ],
+  "author": "Full Stack House",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstackhouse/react-compose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fullstackhouse/react-compose/issues"
+  },
+  "homepage": "https://github.com/fullstackhouse/react-compose#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.0",
+    "jsdom": "^25.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
